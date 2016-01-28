@@ -46,6 +46,18 @@
     return nil;
 }
 
+- (NSString *)ordinalForInteger:(NSUInteger)integer {
+    NSString *ordinal = @"th";
+    if (integer % 10 == 1 && integer % 100 != 11) {
+        ordinal = @"st";
+    } else if (integer % 10 == 2 && integer % 100 != 12) {
+        ordinal = @"nd";
+    } else if (integer % 10 == 3 && integer % 100 != 13) {
+        ordinal = @"rd";
+    }
+    return ordinal;
+}
+
 - (void)learnSkillBash {
     
     //
