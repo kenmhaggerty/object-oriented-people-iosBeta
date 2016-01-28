@@ -36,6 +36,7 @@
         _name = name;
         _ageInYears = ageInYears;
         _heightInInches = heightInInches;
+        _skills = [[NSMutableArray alloc] init];
     }
     return self;
 }
