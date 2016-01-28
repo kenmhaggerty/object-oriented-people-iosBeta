@@ -19,7 +19,7 @@
 
 - (instancetype)init {
     
-    self = [super init];
+    self = [self initWithName:@"Ken" ageInYears:26 heightInInches:70];
     return self;
 }
 
