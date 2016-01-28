@@ -43,7 +43,9 @@
 
 - (NSString *)celebrateBirthday {
     
-    return nil;
+    NSString *birthdayMessage = [NSString stringWithFormat:@"Happy %lu%@ Birthday, %@!!!", ++self.ageInYears, [self ordinalForInteger:self.ageInYears], self.name].uppercaseString;
+    NSLog(@"%@", birthdayMessage);
+    return birthdayMessage;
 }
 
 - (NSString *)ordinalForInteger:(NSUInteger)integer {
