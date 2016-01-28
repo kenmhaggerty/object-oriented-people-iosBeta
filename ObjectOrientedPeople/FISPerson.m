@@ -62,32 +62,47 @@
 
 - (void)learnSkillBash {
     
-    //
+    NSString *skill = @"bash";
+    if (![self.skills containsObject:skill]) {
+        [self.skills addObject:skill];
+    }
 }
 
 - (void)learnSkillXcode {
     
-    //
+    NSString *skill = @"Xcode";
+    if (![self.skills containsObject:skill]) {
+        [self.skills addObject:skill];
+    }
 }
 
 - (void)learnSkillObjectiveC {
     
-    //
+    NSString *skill = @"Objective-C";
+    if (![self.skills containsObject:skill]) {
+        [self.skills addObject:skill];
+    }
 }
 
 - (void)learnSkillObjectOrientedProgramming {
     
-    //
+    NSString *skill = @"Object-Oriented Programming";
+    if (![self.skills containsObject:skill]) {
+        [self.skills addObject:skill];
+    }
 }
 
 - (void)learnSkillInterfaceBuilder {
     
-    //
+    NSString *skill = @"Interface Builder";
+    if (![self.skills containsObject:skill]) {
+        [self.skills addObject:skill];
+    }
 }
 
 - (BOOL)isQualifiedTutor {
     
-    return NO;
+    return (self.skills.count >= 4);
 }
 
 @end
