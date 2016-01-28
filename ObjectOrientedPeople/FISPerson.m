@@ -32,6 +32,11 @@
 - (instancetype)initWithName:(NSString *)name ageInYears:(NSUInteger)ageInYears heightInInches:(NSUInteger)heightInInches {
     
     self = [super init];
+    if (self) {
+        _name = name;
+        _ageInYears = ageInYears;
+        _heightInInches = heightInInches;
+    }
     return self;
 }
 
